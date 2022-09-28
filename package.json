@@ -1,0 +1,20 @@
+{
+  "name": "jslyh",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/lyh.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ng-npm/jslyh.git"
+  },
+  "keywords": [],
+  "author": "noely-gangello <noely.gangello@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ng-npm/jslyh/issues"
+  },
+  "homepage": "https://github.com/ng-npm/jslyh#readme"
+}
