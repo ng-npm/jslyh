@@ -1,14 +1,17 @@
+
+
+/* == [ js lyh ] == == == == == == == == == */
 const fs = require( "fs" );
 
 
 const lyh = Object.freeze( [
-	print = function( l, y, h ) {
-        h ? console.log( l, y, h ) : !h && y ? console.log( l, y ) : console.log( l );
+	_ = function( l, y, h ) {
+		h ? console.log( l, y, h ) : !h && y ? console.log( l, y ) : console.log( l );
 	},
 	log = function( l ) {
-        console.table( l );
+		console.table( l );
 	},
-	inverse = function( v ) {
+	inverso = function( v ) {
 		return v.split( "" ).reverse().join( "" );
 	},
 	range = function( start, stop, step ) {
@@ -32,16 +35,27 @@ const lyh = Object.freeze( [
 
 		return result;
 	},
-    save = ( l, y ) => {
-        let h = JSON.stringify( y );
-        fs.writeFileSync( l, h );
-    },
-    append = ( l, y ) => {
-        let h = JSON.stringify( y );
-        fs.appendFileSync( l, h );
-    },
+	save = ( l, y ) => {
+		let h = JSON.stringify( y );
+		fs.writeFileSync( l, h );
+	},
+	append = ( l, y ) => {
+		let h = JSON.stringify( y );
+		fs.appendFileSync( l, h );
+	},
 ] );
 
+Object.defineProperty( String.prototype, "inverse", {
+	value: function() {
+		return this.split( "" ).reverse().join( "" );
+	}, enumerable: false
+} );
+
+Object.defineProperty( String.prototype, "capitalize", {
+	value: function() {
+		return this.charAt( 0 ).toUpperCase() + this.slice( 1 );
+	}, enumerable: false
+} );
 
 
 
@@ -58,8 +72,8 @@ const lyh = Object.freeze( [
 
 
 
-/* [ exports ] 
-=================================== */
+
+/* == [ exports ] == == == == == == == == == */
 module.exports = lyh;
 
 
@@ -68,7 +82,7 @@ module.exports = lyh;
 
 
 
-/* [ notations ] */
+/* == [ notations ] == == == == == == == == == */
 /* 
     using require and commonjs in es6 projects:
 

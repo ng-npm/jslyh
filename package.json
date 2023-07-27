@@ -1,6 +1,6 @@
 {
   "name": "jslyh",
-  "version": "1.17.0",
+  "version": "1.25.0",
   "description": "",
   "main": "./src/lyh.js",
   "scripts": {
