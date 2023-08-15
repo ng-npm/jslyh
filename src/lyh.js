@@ -5,9 +5,7 @@ const fs = require( "fs" );
 
 
 const lyh = Object.freeze( [
-	_ = function( l, y, h ) {
-		h ? console.log( l, y, h ) : !h && y ? console.log( l, y ) : console.log( l );
-	},
+	_ = ( ...args ) => conaole.log( ...args ),
 	log = function( l ) {
 		console.table( l );
 	},
@@ -92,4 +90,12 @@ module.exports = lyh;
 
     using require to import from .cjs files
     let ceo = require( "./ceo.cjs" );
+*/
+
+/* == [  ] == == == == == == == == == */
+/*
+	_ = function( l, y, h ) {
+		h ? console.log( l, y, h ) : !h && y ? console.log( l, y ) : console.log( l );
+	},
+
 */
