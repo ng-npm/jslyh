@@ -92,7 +92,7 @@ module.exports = lyh;
     let ceo = require( "./ceo.cjs" );
 */
 
-/* == [  ] == == == == == == == == == */
+/* == [ firts ] == == == == == == == == == */
 /*
 	_ = function( l, y, h ) {
 		h ? console.log( l, y, h ) : !h && y ? console.log( l, y ) : console.log( l );
